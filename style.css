@@ -1,0 +1,57 @@
+*{
+    font-family:cursive;
+}
+body{
+    background: linear-gradient(45deg,#23b7ca,#60ddb8,#052c31,#3cd87d);
+}
+header{
+background:linear-gradient(45deg,#23b7ca,#60ddb8,#0c2e33,#3cd87d);
+padding:1.5rem;
+font-size:20px;
+color:cyan ;
+}
+form {
+    margin-top:1.5%;
+    margin-left:30%;
+    font-size:20px;
+    background: rgba(255, 255, 255, .3);
+    padding:3rem;
+    color: black;
+    font: weight 300px;;
+    width:500px;
+    height:550px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+
+}
+.login{
+    margin-top:6%;
+    margin-left:30%;
+    background: rgba(255, 255, 255, .3);
+    padding: 4rem;
+    color: black;
+    font: weight 300px;;
+    width:500px;
+    height:350px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+}
+
+ a {
+    text-decoration:none;
+    font-size:20px;
+    color: black;
+	margin-left: 12px;
+}
+a{
+    color:cyan;
+}
+
+a:hover {
+    color:cyan;
+}
+
+#message{
+    color: red;
+}
+
