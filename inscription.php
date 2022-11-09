@@ -123,4 +123,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+	
+   //  Securisation de l'application
+              <?php
+            $Nom=$LangagesdeProgrammation=$login= $Motsdepass=$ConfirmerMotsdepass= "";
+
+            function securisation($donnees){
+                $donnees = trim($donnees);
+                $donnees = stripslashes($donnees);
+                $donnees = strip_tags($donnees);
+                return $donnees;
+            }
+           
+            $Nom = securisation($_POST['Nom']);
+            $LangagesdeProgrammation = securisation($_POST['LangagesdeProgrammation']); 
+            $login = securisation($_POST['login']);
+            $Motsdepass = securisation($_POST['Motsdepass']);
+            $ConfirmerMotsdepass = securisation($_POST['ConfirmerMotsdepass'])
+        ?>	
 </html>
