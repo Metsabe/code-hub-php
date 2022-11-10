@@ -80,5 +80,23 @@
 		?>
 		</span>
 		</h1>
+		
+		// Securisation des formulaires
+		<?php
+                     $Nom=$LangagesdeProgrammation=$login= $Motsdepass=$ConfirmerMotsdepass= "";
+
+                     function securisation($donnees){
+                        $donnees = trim($donnees);
+                        $donnees = stripslashes($donnees);
+                        $donnees = strip_tags($donnees);
+                        return $donnees;
+                     }
+           
+                     $Nom = securisation($_POST['Nom']);
+                     $LangagesdeProgrammation = securisation($_POST['LangagesdeProgrammation']); 
+                     $login = securisation($_POST['login']);
+                     $Motsdepass = securisation($_POST['Motsdepass']);
+                     $ConfirmerMotsdepass = securisation($_POST['ConfirmerMotsdepass'])
+                ?>
 	</body>
 </html>
